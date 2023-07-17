@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <section class="main-form">
+      <div class="container">
+        <h1>Student Registeration Form</h1>
+        <hr />
+        <form id="main-form" novalidate>
+          <div class="form-control">
+            <label for="firstname">First Name :</label>
+            <input
+              id="firstname"
+              name="firstname"
+              type="text"
+              placeholder="Firstname"
+            />
+          </div>
+
+          <div class="form-control">
+            <label for="middlename">Middle Name :</label>
+            <input
+              id="middlename"
+              name="middlename"
+              type="text"
+              placeholder="Middlename"
+            />
+          </div>
+
+          <div class="form-control">
+            <label for="lastname">Last Name :</label>
+            <input
+              id="lastname"
+              name="lastname"
+              type="text"
+              placeholder="Lastname"
+            />
+          </div>
+
+          <div class="form-control-2">
+            <label for="course">Course :</label>
+            <select name="course" id="course">
+              <option value="Course" disabled default selected>Course</option>
+              <option value="HTML">HTML</option>
+              <option value="CSS">CSS</option>
+              <option value="JAVASCRIPT">JAVASCRIPT</option>
+            </select>
+          </div>
+
+          <div class="form-control-2">
+            <p>Gender :</p>
+            <input type="radio" name="gender" id="gender" checked />
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="gender" />
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="gender" />
+            <label for="other">Other</label>
+          </div>
+
+          <div class="form-control">
+            <label for="tel">Phone :</label>
+            <input type="tel" name="area-code" id="area-code" value="+98" />
+            <input type="tel" name="tel" id="tel" placeholder="Phone no." />
+          </div>
+
+          <div class="form-control">
+            <label for="address">Current Address :</label>
+            <textarea
+              name="address"
+              id="address"
+              cols="30"
+              rows="10"
+              placeholder="Current Address"
+            ></textarea>
+          </div>
+
+          <div class="form-control">
+            <label for="email">Email :</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter Email"
+            />
+          </div>
+
+          <div class="form-control">
+            <label for="password">Password : </label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Enter Password"
+            />
+          </div>
+
+          <div class="form-control">
+            <label for="retype-pass">Re-Type Password :</label>
+            <input
+              type="password"
+              name="retype-pass"
+              id="retype-pass"
+              placeholder="Retype Password"
+            />
+          </div>
+
+          <button class="btn" type="submit">Register</button>
+        </form>
+      </div>
+    </section>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
